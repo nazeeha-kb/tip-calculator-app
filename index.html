@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body
+    class="space-mono-bold bg-cust-grey-200 flex flex-col justify-center items-center"
+  >
+    <h1 class="text-cust-grey-500 sm:text-3xl text-2xl tracking-[0.4rem] pt-8 pb-7">
+      SPLI <br />
+      TTER
+    </h1>
+    <main
+      class="flex flex-col md:flex-row bg-cust-white md:max-w-4xl max-w-sm rounded-2xl text-cust-grey-500 p-6 space-y-8"
+    >
+      <form class="space-y-8">
+        <label for="bill"> Bill </label>
+        <div class="inputParent mt-1 active:outline-cust-green-400">
+          <i class="fa-solid fa-dollar-sign text-cust-grey-400"></i>
+          <input
+            type="text"
+            name=""
+            id="bill"
+            placeholder="0"
+            class="text-end outline-none text-cust-green-900 text-2xl w-full"
+          />
+        </div>
+
+        <fieldset class="">
+          <legend>Select Tip %</legend>
+          <div class="grid grid-cols-2 gap-3 mt-3">
+            <button type="button" class="tipPercentage">5%</button>
+            <button type="button" class="tipPercentage">10%</button>
+            <button type="button" class="tipPercentage bg-cust-green-400 text-cust-green-900 hover:bg-cust-green-300">15%</button>
+            <button type="button" class="tipPercentage">25%</button>
+            <button type="button" class="tipPercentage">50%</button>
+            <input
+              type="text"
+              name="custom"
+              placeholder="custom"
+              id="custom"
+              class="bg-cust-grey-50 placeholder:text-cust-grey-500 text-2xl text-center outline-none text-cust-green-900"
+            />
+          </div>
+        </fieldset>
+
+        <label for="people"> Number of People </label>
+        <div class="inputParent text-cust-grey-400">
+          <i class="fa-solid fa-user"></i>
+          <input
+            type="text"
+            name=""
+            id="people"
+            class="text-end outline-none text-cust-green-900 text-2xl w-full"
+            placeholder="0"
+          />
+        </div>
+      </form>
+
+      <section class="bg-cust-green-900 rounded-2xl p-6 space-y-4">
+        <div class="flex justify-between items-center">
+          <div>
+            <p class="text-cust-grey-50">Tip Amount</p>
+            <small>/ person</small>
+          </div>
+          <div class="text-2xl text-cust-green-400">$0.00</div>
+        </div>
+        <div class="flex justify-between items-center">
+          <div>
+            <p class="text-cust-grey-50">Total</p>
+            <small>/ person</small>
+          </div>
+          <div class="text-2xl text-cust-green-400">$0.00</div>
+        </div>
+        <button class="w-full bg-cust-green-400 text-cust-green-900 rounded-md p-2 text-xl hover:cursor-pointer hover:bg-cust-green-300">RESET</button>
+      </section>
+    </main>
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  </body>
+</html>
