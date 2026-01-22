@@ -13,6 +13,7 @@
 
   /* Neutral colos */
   --color-cust-green-300: hsl(172, 67%, 70%);
+  --color-cust-green-800: hsl(176, 67%, 25%);
   --color-cust-green-900: hsl(183, 100%, 15%);
   --color-cust-grey-500: hsl(186, 14%, 43%);
   --color-cust-grey-400: hsl(184, 14%, 56%);
@@ -28,7 +29,17 @@
   .tipPercentage {
     @apply bg-cust-green-900 text-cust-grey-50 rounded-sm p-2 text-xl cursor-pointer hover:bg-cust-green-300 hover:text-cust-green-900;
   }
+
   .inputParent {
-    @apply bg-cust-grey-50 flex justify-between items-center py-1 px-4 rounded-sm w-full mt-1
+    @apply bg-cust-grey-50 flex justify-between items-center py-1 px-4 rounded-sm w-full mt-1;
+  }
+
+  .btn-disabled {
+    @apply  bg-cust-green-800
+  }
+  
+  .btn-active {
+    @apply  bg-cust-green-400 hover:bg-cust-green-300 hover:cursor-pointer
+
   }
 }
