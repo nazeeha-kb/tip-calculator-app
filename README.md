@@ -18,7 +18,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Live site URL](https://vercel.com/nazeehas-projects/tip-calculator-app)
+- Live Site URL: [Live site URL](https://tip-calculator-app-opal-six.vercel.app/)
 
 ## My process
 
